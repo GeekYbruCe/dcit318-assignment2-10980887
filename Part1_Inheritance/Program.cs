@@ -10,11 +10,11 @@ namespace OOP_Inheritance
         }
     }
 
-    class Snake : Animal
+    class Dog : Animal
     {
         public override void MakeSound()
         {
-            Console.WriteLine("Hiss");
+            Console.WriteLine("Bark");
         }
     }
 
@@ -31,11 +31,11 @@ namespace OOP_Inheritance
         static void Main(string[] args)
         {
             Animal genericAnimal = new Animal();
-            Snake snake = new Snake();
+            Dog dog = new Dog();
             Cat cat = new Cat();
 
             genericAnimal.MakeSound();
-            snake.MakeSound();
+            dog.MakeSound();
             cat.MakeSound();
         }
     }
